@@ -20,7 +20,7 @@ El objetivo de este proyecto es analizar los datos de ventas para obtener inform
 
 1. Clona este repositorio en tu máquina local:
     ```sh
-    git clone https://github.com/tu_usuario/analisis_ventas.git
+    git clone (https://github.com/jhonta77/analicis_ventas.git)
     ```
 
 2. Navega al directorio del proyecto:
