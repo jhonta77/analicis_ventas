@@ -1,0 +1,29 @@
+# 1. Inicializa el repositorio local (si aún no lo has hecho)
+git init
+
+# 2. Agrega todos los archivos al área de preparación
+git add .
+
+# 3. Haz un primer commit
+git commit -m "Primer commit"
+
+# 4. Conecta el repositorio local con el remoto (GitHub)
+git remote add origin https://github.com/tu-usuario/nombre-del-repo.git
+
+# 5. Haz un push inicial (esto puede fallar si el repositorio remoto ya tiene contenido)
+git push -u origin main
+
+# Si recibes el error "rejected", realiza un pull para integrar los cambios remotos
+git pull origin main --rebase
+
+# Si hay conflictos, resuélvelos, luego agrega los archivos modificados
+git add .
+
+# Haz un commit después de resolver los conflictos
+git commit -m "Resuelto conflicto"
+
+# Haz un push nuevamente después de resolver los conflictos
+git push -u origin main
+
+# Si prefieres sobrescribir lo remoto con tus cambios locales, usa el siguiente comando
+git push -u origin main --force
